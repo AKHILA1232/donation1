@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate for a Cause</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>Donate for a Cause</h1>
+            <p>Your contribution can make a difference!</p>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('donate')">Donate</a></li>
+            <li><a href="#" onclick="showSection('about')">About Us</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="content-section">
+        <h2>Welcome to Donate for a Cause</h2>
+        <p>Your contribution can make a difference in someone's life. Join us to make a positive impact on the world!</p>
+
+        <!-- Carousel Section -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <div class="carousel-item active">
+                    <img src="donate..jpg" alt="Impact Story 1">
+                    <div class="carousel-caption">
+                        <h3>Education for All</h3>
+                        <p>Your donations help build schools in rural areas.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="donate1..jpg" alt="Impact Story 2">
+                    <div class="carousel-caption">
+                        <h3>Healthcare Access</h3>
+                        <p>Providing medical aid to underserved communities.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="donate2..jpg" alt="Impact Story 3">
+                    <div class="carousel-caption">
+                        <h3>Clean Water Initiative</h3>
+                        <p>Your donations fund clean water projects.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+        <!-- Our Mission Section -->
+        <div class="mission">
+            <h3>Our Mission</h3>
+            <p>We aim to provide resources, support, and hope to those in need. Our mission is to bring people together to create lasting change in communities through donations and volunteer work.</p>
+        </div>
+
+        <!-- Impact Stories Section -->
+        <div class="impact-stories">
+            <h3>Impact Stories</h3>
+            <p>Read about how your donations have changed lives:</p>
+            <ul>
+                <li><strong>Education for All:</strong> Your contributions helped build schools in rural areas, providing education to over 5,000 children.</li>
+                <li><strong>Healthcare Access:</strong> With donor support, we've provided medical aid to underserved communities, benefiting thousands.</li>
+                <li><strong>Clean Water Initiative:</strong> Donations funded clean water projects, improving health for many families worldwide.</li>
+            </ul>
+        </div>
+
+        <!-- How Your Donation Helps Section -->
+        <div class="donation-impact">
+            <h3>How Your Donation Helps</h3>
+            <p>Your donations go towards essential resources, such as education materials, medical supplies, and infrastructure projects. Every dollar you donate has a direct impact on the lives of those in need.</p>
+        </div>
+    </section>
+
+    <!-- Donation Form Section -->
+    <section id="donate" class="content-section" style="display: none;">
+        <h2>Make a Donation</h2>
+        <form id="donationForm" onsubmit="handleDonation(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="amount">Donation Amount:</label>
+            <input type="number" id="amount" name="amount" min="1" required>
+
+            <button type="submit">Donate Now</button>
+        </form>
+        <p id="thankYouMessage" style="display: none;">Thank you for your generous donation!</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="content-section" style="display: none;">
+        <h2>About Us</h2>
+        <p>We are a non-profit organization dedicated to making a positive impact in the world. Our mission is to support various causes through the generous contributions of people like you. By donating, you are helping create a better future for those in need.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section" style="display: none;">
+        <h2>Contact Us</h2>
+        <p>If you have questions or would like to get involved, please reach out to us:</p>
+        <p>Email: Akila@donateforacause.org</p>
+        <p>Phone: 9873572718</p>
+        <p>Address: Hyderabad, Telangana, India 500011</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Donate for a Cause. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
